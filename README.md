@@ -8,14 +8,20 @@ App Features:
 + Server is always waiting for new request on localhost port 3000.
 + Server will answer with current temperature of searched city.
 
+Application was built using Docker containers to make an automated and scalable build.
+
 ## Stack
 
 + NodeJs
 + Express
 + OpenWeather Api
++ Docker
 
 
 ### Run
 
-    npm install
-    node app.js
+Use docker to run project code.Just execute run.sh script
+
+Development environment
+
+    ./run.sh    //it will run docker compose up -d command and docker-compose.yml will be executed
