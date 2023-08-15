@@ -5,7 +5,9 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - .:/usr/src/app
+      - ${PWD}/app.js
+      - ${PWD}/index.html
+      - ${PWD}/styles.css
     container_name: weather_container
     environment:
       - NODE_ENV=development
